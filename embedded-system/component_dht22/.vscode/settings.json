@@ -1,0 +1,7 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "gpio.h": "c",
+    "dht22.h": "c"
+  }
+}

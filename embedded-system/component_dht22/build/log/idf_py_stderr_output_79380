@@ -1,0 +1,20 @@
+Command: /home/thomas/.espressif/python_env/idf6.0_py3.11_env/bin/python /home/thomas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/thomas/Documents/embedded_system/Project_Weather/dev_component_dht22/build/Project_Weather.elf /home/thomas/Documents/embedded_system/Project_Weather/dev_component_dht22/build/bootloader/bootloader.elf -m '/home/thomas/.espressif/python_env/idf6.0_py3.11_env/bin/python' '/home/thomas/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/thomas/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/thomas/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081879: panic_abort at /home/thomas/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400854e1: esp_system_abort at /home/thomas/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008607e: vApplicationStackOverflowHook at /home/thomas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x400870f3: vTaskSwitchContext at /home/thomas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3698 (discriminator 7)
+--- 0x40086188: _frxt_dispatch at /home/thomas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4008613a: _frxt_int_exit at /home/thomas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+--- 0x40006598: rom_get_sar_dout in ROM
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/thomas/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/thomas/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

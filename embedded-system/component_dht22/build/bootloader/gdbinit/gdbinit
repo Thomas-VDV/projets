@@ -1,0 +1,2 @@
+source /home/thomas/Documents/embedded_system/Project_Weather/dev_component_dht22/build/bootloader/gdbinit/symbols
+source /home/thomas/Documents/embedded_system/Project_Weather/dev_component_dht22/build/bootloader/gdbinit/connect

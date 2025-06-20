@@ -1,0 +1,6 @@
+*~
+*.o
+sudoku
+colors_tests
+grid_tests
+settings.json
