@@ -1,0 +1,2 @@
+source /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/gdbinit/symbols
+source /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/gdbinit/connect

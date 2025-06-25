@@ -1,0 +1,26 @@
+Command: /home/thomas/.espressif/python_env/idf6.0_py3.11_env/bin/python /home/thomas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/dev_component_buzzer_passive.elf /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/bootloader/bootloader.elf -m '/home/thomas/.espressif/python_env/idf6.0_py3.11_env/bin/python' '/home/thomas/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/thomas/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/thomas/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4000d099: __udivdi3 in ROM
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+--- 0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x4000d096: __udivdi3 in ROM
+--- 0x400da661: ledc_calculate_divisor at /home/thomas/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:487
+---  (inlined by) ledc_set_timer_div at /home/thomas/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:651
+--- 0x400db289: ledc_set_freq at /home/thomas/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:1110
+--- 0x400d6799: buzzer_passive_play_tone at /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/components/dht22/buzzer_passive.c:50
+--- 0x400d67f4: buzzer_passive_play at /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/components/dht22/buzzer_passive.c:65
+--- 0x400d66c1: task_buzzer_passive at /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/main/main.c:15
+--- 0x40085d8d: vPortTaskWrapper at /home/thomas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/thomas/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/thomas/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

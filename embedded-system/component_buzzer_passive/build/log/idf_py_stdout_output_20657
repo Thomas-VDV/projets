@@ -1,0 +1,18 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/bootloader/esp-idf/esptool_py && /home/thomas/.espressif/python_env/idf6.0_py3.11_env/bin/python /home/thomas/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Building C object esp-idf/dht22/CMakeFiles/__idf_dht22.dir/buzzer_passive.c.obj
+[4/9] Linking C static library esp-idf/dht22/libdht22.a
+[5/9] Completed 'bootloader'
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable dev_component_buzzer_passive.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.dev8
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/dev_component_buzzer_passive.bin
+[9/9] cd /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/esp-idf/esptool_py && /home/thomas/.espressif/python_env/idf6.0_py3.11_env/bin/python /home/thomas/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/partition_table/partition-table.bin /home/thomas/Documents/embedded_system/Project_Weather/dev_component_buzzer_passive/build/dev_component_buzzer_passive.bin
+dev_component_buzzer_passive.bin binary size 0x32260 bytes. Smallest app partition is 0x100000 bytes. 0xcdda0 bytes (80%) free.
